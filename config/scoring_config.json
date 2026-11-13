@@ -1,0 +1,27 @@
+{
+  "version": "2.0.0",
+  "weights": {
+    "source_reliability": 0.30,
+    "cross_source_agreement": 0.15,
+    "period_compatibility": 0.20,
+    "unit_dimensional_compatibility": 0.10,
+    "extraction_mapping_quality": 0.25
+  },
+  "thresholds": {
+    "high_confidence_min": 0.85,
+    "medium_confidence_min": 0.60
+  },
+  "penalties": {
+    "hash_mismatch_penalty": 0.50,
+    "missing_original_document_penalty": 0.40,
+    "custom_extension_penalty": 0.30,
+    "single_source_penalty": 0.20
+  },
+  "critical_metrics": [
+    "revenue",
+    "net_income",
+    "total_assets",
+    "total_liabilities",
+    "stockholders_equity"
+  ]
+}

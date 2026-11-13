@@ -1,0 +1,129 @@
+{
+  "metrics": {
+    "revenue": {
+      "canonical_name": "Revenue",
+      "statement": "income_statement",
+      "period_type": "duration",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "RevenueFromContractWithCustomerExcludingAssessedTax",
+        "Revenues",
+        "SalesRevenueNet",
+        "TotalRevenuesAndOtherIncome"
+      ],
+      "description": "Total consolidated revenue recognized during the fiscal period."
+    },
+    "net_income": {
+      "canonical_name": "Net Income",
+      "statement": "income_statement",
+      "period_type": "duration",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "NetIncomeLoss",
+        "ProfitLoss"
+      ],
+      "description": "The consolidated net income (loss) for the period."
+    },
+    "gross_profit": {
+      "canonical_name": "Gross Profit",
+      "statement": "income_statement",
+      "period_type": "duration",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "GrossProfit",
+        "RevenueLessCostOfGoodsAndServicesSold",
+        "GrossProfitLoss"
+      ],
+      "description": "Aggregate revenue less cost of goods and services sold."
+    },
+    "operating_income": {
+      "canonical_name": "Operating Income",
+      "statement": "income_statement",
+      "period_type": "duration",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "OperatingIncomeLoss"
+      ],
+      "description": "Operating profit or loss before non-operating items, interest, and taxes."
+    },
+    "total_assets": {
+      "canonical_name": "Total Assets",
+      "statement": "balance_sheet",
+      "period_type": "instant",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "Assets"
+      ],
+      "description": "Sum of the carrying amounts of all assets as of the reporting date."
+    },
+    "total_liabilities": {
+      "canonical_name": "Total Liabilities",
+      "statement": "balance_sheet",
+      "period_type": "instant",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "Liabilities",
+        "LiabilitiesCurrentAndNoncurrent"
+      ],
+      "description": "Sum of the carrying amounts of all liabilities as of the reporting date."
+    },
+    "stockholders_equity": {
+      "canonical_name": "Stockholders' Equity",
+      "statement": "balance_sheet",
+      "period_type": "instant",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "StockholdersEquity",
+        "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest",
+        "CommonStockholdersEquity",
+        "ShareholdersEquity"
+      ],
+      "description": "Total equity attributable to parent stockholders as of the reporting date."
+    },
+    "cash_and_cash_equivalents": {
+      "canonical_name": "Cash and Cash Equivalents",
+      "statement": "balance_sheet",
+      "period_type": "instant",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "CashAndCashEquivalentsAtCarryingValue",
+        "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents",
+        "CashAndCashEquivalents"
+      ],
+      "description": "Unrestricted cash and liquid investments with maturity under 90 days."
+    },
+    "operating_cash_flow": {
+      "canonical_name": "Operating Cash Flow",
+      "statement": "cash_flow",
+      "period_type": "duration",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        "CashProvidedByUsedInOperatingActivities",
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"
+      ],
+      "description": "The net cash inflow (outflow) from operating activities."
+    },
+    "capital_expenditure": {
+      "canonical_name": "Capital Expenditure",
+      "statement": "cash_flow",
+      "period_type": "duration",
+      "default_unit": "USD",
+      "is_consolidated_only": true,
+      "concepts": [
+        "PaymentsToAcquirePropertyPlantAndEquipment",
+        "PaymentsToAcquireProductiveAssets"
+      ],
+      "description": "Cash outflow paid to acquire property, plant, equipment, or productive assets."
+    }
+  }
+}

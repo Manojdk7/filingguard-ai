@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "rules": {
+    "balance_sheet_equation": {
+      "name": "Accounting Equation (Assets = Liabilities + Equity)",
+      "category": "balance_sheet",
+      "enabled": true,
+      "relative_tolerance": 0.005,
+      "absolute_tolerance": 1000000.0,
+      "description": "Verifies that total assets equal total liabilities plus stockholders' equity within allowable rounding/presentation tolerances."
+    },
+    "operating_income_presentation": {
+      "name": "Operating Income Presentation (Gross Profit - Operating Expenses)",
+      "category": "income_statement",
+      "enabled": true,
+      "relative_tolerance": 0.001,
+      "absolute_tolerance": 100000.0,
+      "description": "Validates operating income against gross profit minus traceable operating expenses where operating expenses are disclosed."
+    },
+    "yoy_variance": {
+      "name": "Year-over-Year Variance Analysis",
+      "category": "variance",
+      "enabled": true,
+      "warning_threshold_pct": 40.0,
+      "description": "Flags canonical metrics with year-over-year percentage variances exceeding the anomaly threshold for auditor review without asserting fraud."
+    },
+    "cross_statement_net_income": {
+      "name": "Net Income Cross-Statement Consistency",
+      "category": "cross_statement",
+      "enabled": true,
+      "absolute_tolerance": 1.0,
+      "description": "Verifies that net income on the income statement matches net income reported on the cash flow statement for the same period."
+    },
+    "cross_statement_cash": {
+      "name": "Cash & Cash Equivalents Cross-Statement Consistency",
+      "category": "cross_statement",
+      "enabled": true,
+      "absolute_tolerance": 1.0,
+      "description": "Verifies cash and cash equivalents reported on the balance sheet against ending cash on the cash flow statement where comparable."
+    },
+    "segment_reconciliation": {
+      "name": "Segment Breakdown Reconciliation",
+      "category": "segment_reconciliation",
+      "enabled": true,
+      "tolerance_pct": 0.01,
+      "description": "Verifies that reported dimensional segment line items reconcile cleanly with consolidated totals."
+    }
+  }
+}
+
